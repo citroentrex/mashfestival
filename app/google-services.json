@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741124963254",
+    "firebase_url": "https://mashfestival-5ba31.firebaseio.com",
+    "project_id": "mashfestival-5ba31",
+    "storage_bucket": "mashfestival-5ba31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741124963254:android:69d8c2af63b344a4",
+        "android_client_info": {
+          "package_name": "citroentrex.mashfestival"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741124963254-d4dh8tcs3lfm390hdibd6qu0c2948ktn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "citroentrex.mashfestival",
+            "certificate_hash": "e150e3bebec55b3160a12d592da97c029ddaf421"
+          }
+        },
+        {
+          "client_id": "741124963254-e65ufjdocvfatlbl0ivm43048e31g76s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB72M0OK3ZzRQ-Vn16JxV1GLpAB-boRvwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741124963254-e65ufjdocvfatlbl0ivm43048e31g76s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
