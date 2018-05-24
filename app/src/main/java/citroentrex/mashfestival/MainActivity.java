@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -47,7 +48,19 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference();
 
-                myRef.setValue("Hello, World!");
+                myRef.setValue("Clement test");
+            }
+        });
+
+        Button eventDetailsListButton = (Button)findViewById(R.id.button2);
+        eventDetailsListButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(v.getContext(), NotificationListActivity.class);
+                startActivity(intent);
+
             }
         });
     }
@@ -65,13 +78,19 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             } else {
                 Toast.makeText(this,
-                        "We couldn't sign you in. Please try again later.",
+                        resultCode,
                         Toast.LENGTH_LONG)
                         .show();
 
                 // Close the app
                 finish();
             }
+        } else
+        {
+            Toast.makeText(this,
+                    resultCode,
+                    Toast.LENGTH_LONG)
+                    .show();
         }
     }
 
