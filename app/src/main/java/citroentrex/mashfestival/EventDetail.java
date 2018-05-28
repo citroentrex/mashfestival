@@ -1,5 +1,7 @@
 package citroentrex.mashfestival;
 
+import android.util.EventLog;
+
 import java.util.Date;
 
 public class EventDetail {
@@ -12,6 +14,10 @@ public class EventDetail {
         eventTime = new Date().getTime();
     }
 
+    public EventDetail() {
+        this.eventName = "";
+        this.eventTime = -1;
+    }
     public String getEventName() { return eventName; }
     public void setEventName(String eventName) { this.eventName = eventName; }
     public long getEventTime() { return eventTime; }
